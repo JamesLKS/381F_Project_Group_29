@@ -101,7 +101,7 @@ app.get('/', (req, res) => {
 res.redirect('/documents'); 
 }); 
 ``` 
- 
+## Test Cases
 Test case 1(Search) 
 Precondition: 
 An empty inventory collection  
