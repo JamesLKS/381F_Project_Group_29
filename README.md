@@ -6,6 +6,7 @@
 LEE Kwok Shing, James s13106876  
 LAU TSZ KIT, Keith s13070119 
 LO Wing Lun, Patrick s13103419 
+Chong Pui Shan s12975814 
  
 ## Tech stack 
 COMPOSED OF: Node, Express, EJS 
@@ -58,7 +59,7 @@ Details of the documents can be accessed via clicking it.
 1. Use search function/scroll to find the document. 
 2. Click the document. 
 3. Click the little trashcan icon on the rightest of the page. 
-4. It goes bcak to index page and the document is gone. 
+4. It goes back to index page and the document is gone. 
  
 - Steps to Update Documents 
 1. Use search function/scroll to find the document. 
