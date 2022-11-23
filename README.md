@@ -1,4 +1,4 @@
-# Project Title 
+## Project Title 
 - S381 group project -- Inventory management system  
 - A brief description of how this project works  
  
@@ -6,12 +6,15 @@
 LEE Kwok Shing, James s13106876  
 LAU TSZ KIT, Keith s13070119 
 LO Wing Lun, Patrick s13103419 
-Chong Pui Shan s12975814 
+Chong Pui Shan, Wendy s12975814 
  
 ## Tech stack 
 COMPOSED OF: Node, Express, EJS 
 DATABASE: MongoDB, Mongoose  
 WEB HOSTING: Amazon Web Service (AWS) 
+ 
+##Description 
+This project is develop and implement a cloud-based application, our application called “Inventory management system”. The user can use their account to login and logout the pages. The user can also create, update, delete and search the data in this application. 
  
 ## System trial 
 [Link to our system login page.](https://v3ju7kjtgj.ap-northeast-1.awsapprunner.com/documents/login) 
@@ -97,5 +100,21 @@ router.post('/update/:id', docController.doc_update);
 app.get('/', (req, res) => { 
 res.redirect('/documents'); 
 }); 
- 
 ``` 
+ 
+Test case 1(Search) 
+Precondition: 
+An empty inventory collection  
+Steps: 
+Login as demo (“demo” as password is required) 
+Search inventory documents with name = testing 
+GET /documents/search?name=testing 
+Expected outcome: document with “testing” as name 
+ 
+Test case 2(Create) 
+Precondition: 
+An empty inventory collection 
+Steps: 
+Create a document with ID = 381, Name = testing, Manger = MUstu, Type = document, Quantity = 1.   
+GET /documents/create?inventory_id=381&name=testing&manager=MUstu&type=document&quantity=1 
+Expected outcome: new document with ID = 381, Name = testing, Manger = MUstu, Type = document, Quantity = 1.   
